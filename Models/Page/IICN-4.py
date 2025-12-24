@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import math
+import math 
 from collections import OrderedDict
 from Models.utils.layer import Attention, MultiLayerPerceptron
 
@@ -473,3 +473,4 @@ class IICN(nn.Module):
                 nn.init.xavier_uniform_(m.weight)
 
                 nn.init.constant_(m.bias, 0)
+
