@@ -6,7 +6,7 @@ from collections import OrderedDict
 from Models.utils.layer import Attention, MultiLayerPerceptron
 
 
-class RACP(nn.Module):
+class IICN(nn.Module):
     def __init__(self, Sampler, ModelSettings):
         super().__init__()
 
@@ -471,4 +471,5 @@ class RACP(nn.Module):
         for m in [self.click_enhance_mlp, self.fusion_gate]:
             if isinstance(m, nn.Linear):
                 nn.init.xavier_uniform_(m.weight)
+
                 nn.init.constant_(m.bias, 0)
