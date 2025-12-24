@@ -1,4 +1,4 @@
-import torch
+import torch 
 import torch.nn as nn
 import torch.nn.functional as F
 import math
@@ -708,4 +708,5 @@ def assign_unclicked_items(clicked_embeds, unclicked_embeds):
             assignment_dict[i] = mask
 
         return assignment_dict
+
 
