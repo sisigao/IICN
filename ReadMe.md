@@ -1,4 +1,4 @@
-# Recurrent Attention over Contextualized Page sequence for Click-Through Rate Prediction in Taobao Personalized Search Ranking	
+# Intra-page and Inter-page Context Networks for Item Recommendation	
 ## Introduction
 Pipeline:
 1. Prepare Data
