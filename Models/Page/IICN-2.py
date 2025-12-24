@@ -6,7 +6,7 @@ from collections import OrderedDict
 from Models.utils.layer import Attention, MultiLayerPerceptron
 
 
-class RACP(nn.Module):
+class IICN(nn.Module):
     def __init__(self, Sampler, ModelSettings):
         super().__init__()
 
@@ -410,3 +410,4 @@ class RACP(nn.Module):
                 nn.init.xavier_uniform_(e.weight)
         for key_name in ['ad_title', 'ad_params', 'search_query', 'search_params']:
             nn.init.xavier_uniform_(self.embedding_dict[key_name].weight)
+
