@@ -5,7 +5,7 @@ from collections import OrderedDict
 from Models.utils.layer import Attention, MultiLayerPerceptron
 
 
-class RACP(nn.Module):
+class IICN(nn.Module):
     def __init__(self, Sampler, ModelSettings):
         super().__init__()
         # 保存ModelSettings
